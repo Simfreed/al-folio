@@ -1,78 +1,34 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: Developmental Bifurcations
+description:
+img: /assets/img/bifurc_preview.jpg
 importance: 1
 category: work
 ---
+An individual animal is made up of many different kinds of cells, from neurons to gametes, and exhibits significant geometric asymmetry, in having, for example, a head at one end and feet at the other. 
+Yet, all animals start as a single, mostly symmetric cell: a fertilized egg that has the functional potential to produce any cell type (pluripotent) and to induce the shape changes necessary to yield its matured, complex geometry. 
+The past century of developmental biology research has distinguished cell types and identified molecules that induce them, but the dynamic processes through which cells commit to specific fates and establish robust spatial patterns are not well understood. 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p align="center">
+<iframe width="420" height="200" src="/assets/img/toy_pot_dat.mp4" frameborder="0" allowfullscreen></iframe>
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
+<div class="caption" fontsize=4px style="text-align:justify">
+Qualitative changes in the underlying geometry (i.e., bifurcations) of a dynamical system can be detected via the variance (or covariance, for nD systems) of state variables. 
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
+I am applying concepts from dynamical systems theory to big biological data to bridge the scales between cell fate and molecular mechanism.
+I have recently shown how bifurcations -- the signature of fundamental change in classical, physical dynamical systems, like a beam buckling, or a power-line network crashing- can be detected during development from single-cell RNA-seq data. 
+Moreover, information about the underlying dynamical system guiding the transition, which is normally hidden, because it operates at a faster timescale than we can measure, is inferrable from the data. 
+I am currently working to push this research further from multiple angles, by studying bifurcations during morphogenesis and using simple models to determine if we can predict the results of developmental perturbation experiments directly from gene expression data.
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
+        <img class="img-fluid rounded z-depth-1" width="1000" src="{{ '/assets/img/neut_traj.jpg' | relative_url }}" alt="" title="Bifurcation analysis example"/>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="caption" fontsize=4px style="text-align:justify">
+        Bifurcation detection can be applied to characterize the mechanisms guiding a developmental bifurcation. 
+        In this example of a single-cell RNA-seq trajectory for Neutrophil cells (first published in 
+        <a href="https://www.science.org/doi/10.1126/science.aaw3381">Weinreb et. al., Science, 2020</a>) (A), we've detected both one-to-many (tau_d) and one-to-one (tau_m) bifurcations (B), mapped them onto a cell-fate decision and a maturation point in development (C), and used the correlation matrix at the maturation bifurcation to infer the genetic regulation that guides the transition (D). For more details, see 
+        <a href="https://www.biorxiv.org/content/10.1101/2021.05.03.442465v1">Freedman et al., biorXiv 2021</a>. 
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```

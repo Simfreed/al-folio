@@ -1,78 +1,29 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
+title: Agent-based Simulation
+description: 
+img: /assets/img/afines_schem.jpg
 importance: 2
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+For many systems in biology, the basic molecular interactions are well understood, but the way they modulate larger phenomena are still, well, phenomenal.
+An example is the actomyosin cytoskeleton, a network of semiflexible actin filaments, myosin motors, and crosslinker proteins that provide cells with multiple functions and attributes, such as their shape, ability to propagate forces, and intracellular transport.
+The fundamental interactions are well understood -- for example, a myosin motor can bind onto an actin filament, and walk unidirectionally toward its end, and crosslinkers can bind multiple filaments together, but connecting these pairwise interactions to larger scale collective behavior is not immediately apparent. 
+To determine how these interactions led to larger scale biophysics, I [developed and benchmarked](https://www.sciencedirect.com/science/article/pii/S0006349517306227) an agent-based computational framework, [AFINES](github.com/simfreed/afines) (Active Filament NEtwork Simulation) , and explored the meso-scale consequences of interactions between molecular constituents.
+I found the [basic ingredients of structures and mechanisms](https://pubs.rsc.org/en/content/articlehtml/2018/sm/c8sm00741a?casa_token=FFfOEq97Y6AAAAAA:EfXtqtr6sAF6bZFXrA3_Yn265vDsGWv4_gHLlP8C2AY4KZ2fzIl-DIzhxL24kvmQlmkPr4w7VyO9GnW_), such as bundled and contracted networks (movies below) as well as new mecahanisms that could yield [contraction of networks with rigid rods](https://www.pnas.org/content/114/47/E10037?collection=&utm_source=TrendMD&utm_medium=cpc&utm_campaign=Proc_Natl_Acad_Sci_U_S_A_TrendMD_1), in collaboration with the Gardel lab (UChicago) and [crosslinker domain formation](https://www.pnas.org/content/116/33/16192.short) in collaboration with the Kovar, Voth, and Hocky labs. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
+<div class="row no-gutters">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
+    <iframe width="250" height="250" src="https://www.youtube.com/embed/OQuEmLr8LJY" title="Bundling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
+<iframe width="250" height="250" src="https://www.youtube.com/embed/PaPEY7mDAFk" title="Polarity Sorting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+<iframe width="250" height="250" src="https://www.youtube.com/embed/LIt14vw3yh0" title="Contracting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+Broadly, I am very interested in developing agent-based simulations, and carefully simulationg dynamical systems, to deduce if, when, and how small scale interactions yielded larger scale phenomena. 
+I am also specifically interested in using AFINES, together with 3D force inference methods, to understand the mechanics behind morphogenesis, and how structures form in crowded cellular environments.
