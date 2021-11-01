@@ -12,7 +12,7 @@
   Simon L. Freedman
 
 
-  | blog
+  | Developmental Bifurcations
 
 </title>
 <meta name="description" content="Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -39,7 +39,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/1_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -166,18 +166,39 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Developmental Bifurcations</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <p>An individual animal is made up of many different kinds of cells, from neurons to gametes, and exhibits significant geometric asymmetry, in having, for example, a head at one end and feet at the other. 
+Yet, all animals start as a single, mostly symmetric cell: a fertilized egg that has the functional potential to produce any cell type (pluripotent) and to induce the shape changes necessary to yield its matured, complex geometry. 
+The past century of developmental biology research has distinguished cell types and identified molecules that induce them, but the dynamic processes through which cells commit to specific fates and establish robust spatial patterns are not well understood.</p>
+
+<p align="center">
+<iframe width="420" height="200" src="/assets/img/toy_pot_dat.mp4" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<div class="caption" fontsize="4px" style="text-align:justify">
+Qualitative changes in the underlying geometry (i.e., bifurcations) of a dynamical system can be detected via the variance (or covariance, for nD systems) of state variables. 
+</div>
+<p>I am applying concepts from dynamical systems theory to big biological data to bridge the scales between cell fate and molecular mechanism.
+I have recently shown how bifurcations – the signature of fundamental change in classical, physical dynamical systems, like a beam buckling, or a power-line network crashing- can be detected during development from single-cell RNA-seq data. 
+Moreover, information about the underlying dynamical system guiding the transition, which is normally hidden, because it operates at a faster timescale than we can measure, is inferrable from the data. 
+I am currently working to push this research further from multiple angles, by studying bifurcations during morphogenesis and using simple models to determine if we can predict the results of developmental perturbation experiments directly from gene expression data.</p>
+<div class="row justify-content-sm-center">
+        <img class="img-fluid rounded z-depth-1" width="1000" src="/assets/img/neut_traj.jpg" alt="" title="Bifurcation analysis example">
+</div>
+<div class="caption" fontsize="4px" style="text-align:justify">
+        Bifurcation detection can be applied to characterize the mechanisms guiding a developmental bifurcation. 
+        In this example of a single-cell RNA-seq trajectory for Neutrophil cells (first published in 
+        <a href="https://www.science.org/doi/10.1126/science.aaw3381" target="_blank" rel="noopener noreferrer">Weinreb et. al., Science, 2020</a>) (A), we've detected both one-to-many (tau_d) and one-to-one (tau_m) bifurcations (B), mapped them onto a cell-fate decision and a maturation point in development (C), and used the correlation matrix at the maturation bifurcation to infer the genetic regulation that guides the transition (D). For more details, see 
+        <a href="https://www.biorxiv.org/content/10.1101/2021.05.03.442465v1" target="_blank" rel="noopener noreferrer">Freedman et al., biorXiv 2021</a>. 
+</div>
 
 
-  <ul class="post-list">
-    
-  </ul>
-
-  
-
+  </article>
 
 </div>
 
