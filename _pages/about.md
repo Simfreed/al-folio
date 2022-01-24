@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 [//]:<>Life emerges from the collective behavior of myriads of molecules.
 [//]:<>Over the past 100 years biology has been extremely successful at identifying and characterizing important biomolecules.
 [//]:<>Yet, we still lack the collective understanding that would allow us to 
-I am a computational biophysicist interested in how collective molecular behavior yields complex biological phenomena.
+I am a computational and theoretical biophysicist interested in how collective molecular behavior yields complex biological phenomena.
 I attained a Physics Ph.D. at University of Chicago in 2018 (advisor: [Aaron Dinner](https://dinner-group.uchicago.edu/)) studying cytokseletal networks and am currently a postdoctoral fellow at Northwestern University working with [Madhav Mani](https://madhavmani.com) to understand the dynamics of embryonic and tissue development. 
 I aim to lead a research group that uses physics, math, and computation to solve problems that are fundamental to basic biology and critical for public health.
 <br />
